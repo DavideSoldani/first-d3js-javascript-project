@@ -56,23 +56,14 @@ d3.select("body").on("keydown", function() {
 
 );
 
-
 function init(butterflies){
 
-    var random_centers=[];
-
     var id_index = 0;
-    var random_center;
-    var randx;
-    var randy;
-
 
     for(i=0;i<10;i++){
 
         let randx = Math.floor(Math.random() * (svgWidth-200));
         let randy = Math.floor(Math.random() * (svgHeight-200));
-
-        random_centers.push(random_center);
 
         let temp_butterfly = svg.append("path")
             .attr("stroke","#000")
