@@ -85,8 +85,8 @@ function init(butterflies){
 function restart(){
 	console.log("hai premuto reset");
         for(var index=0; index<10; index++) {
-        	let randx = Math.floor(Math.random() * (svgWidth-200));
-            let randy = Math.floor(Math.random() * (svgHeight-200));
+       		let randx = Math.floor(Math.random() * (svgWidth-200));
+        	let randy = Math.floor(Math.random() * (svgHeight-200));
             d3.select("#b"+index)
                 .transition().duration(2000)
                 .attr("transform", "translate("+randx+","+ randy+") scale(0.3)");
